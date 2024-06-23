@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>My Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+          <div class="container">
+            <nav>
+                <h1>Kelvin.</h1>
+                <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>  
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+               </nav>
+               <div class="header-text">
+                <p class="title">Hello,</p>
+                <h2>I'm <span>Kelvin</span><br>Front-End Developer</h2>
+               </div>
+          </div>
+        </div>
+        <!--- -----------about-------------- --->
+        <div id="about">
+            <div id="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image_1.png">
+                    </div>
+                    <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>As a Front-End Developer, I specialize in creating user-friendly, visually appealing web interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue.js. I focus on building responsive, high-performance websites that prioritize usability and aesthetics. Passionate about staying current with industry trends, I aim to bridge the gap between design and technology, ensuring every project looks great and functions flawlessly.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Proficient in HTML, CSS, and JavaScript</span><br>I build responsive and interactive web pages.</li>
+                            <li><span>Skilled in React and Vue.js</span><br> I create high-performance web applications</li>
+                            <li><span>Expert in responsive design</span><br>I ensure seamless user experiences across all devices.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently</span><br>I am holding certification as a Responsive Web Designer, having successfully completed in designing and developing web interfaces that adapt seamlessly across various devices and screen sizes.
+                            </li>
+                            <li><span>May - June 2024</span><br> I engaged in learning through FreeCodeCamp for a month.</li>
+                            <li><span>April, 2024</span><br> I dedicated three weeks to learning through Mimo Code.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>As a Front-End Developer, I have hands-on experience in creating and maintaining dynamic and responsive websites.</li>
+                            <li><span>Web Development</span><br>I have translated design mockups into functional web pages using HTML, CSS, and JavaScript, and worked extensively with frameworks like React and Vue.js to build interactive applications.</li>
+                            <li><span>Projects</span><br>My projects include developing a magazine's website, a school website, and a personal portfolio. Each of these projects has been optimized for cross-browser compatibility and performance, ensuring a seamless user experience across different devices and screen sizes.</li>
+                            <li><span>Skills and Best Practices</span><br>This experience has honed my ability to troubleshoot issues, implement innovative solutions, and continuously learn and adapt to new technologies. I consistently adhere to best practices in web development and accessibility standards, ensuring that my work is of the highest quality.</li>                       
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------services---------------- -->
+        <div id="services">
+            <div class="container">
+                <h2 class="sub-title">My Services</h2>
+                <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p>Build fast, user-friendly, and responsive websites that work seamlessly across various devices and browsers. I can design and develop websites using HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.</p>
+                     <!---- <a href="#">Learn more</a>---->
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Application Developer</h2>
+                    <p>Develop robust and scalable web applications using modern front-end technologies. I can build single-page applications, progressive web apps, and enterprise-level applications that meet your business needs.</p>
+                    <!---- <a href="#">Learn more</a>---->
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h2>Front-End Optimization and Audit</h2>
+                    <p>Optimize your website's performance, speed, and user experience. I can conduct a thorough front-end audit, identify bottlenecks, and implement improvements to boost your website's loading speed, search engine ranking, and overall performance.</p>
+                   <!---- <a href="#">Learn more</a>---->
+                 </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------portfolio-------------- -->
+         <div id="portfolio">
+            <div class="container">
+                <h2 class="sub-title">My Work</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="school-website.png" loading="lazy">
+                        <div class="layer">
+                            <h3>School Website</h3>
+                            <p>Developed a responsive website for a School using HTML, CSS, JavaScript, including React and Vue.js</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="quote-picture.png">
+                        <div class="layer">
+                            <h3>Quote generator</h3>
+                            <p>Developed a responsive website for a simple website generating inspirational quotes or jokes using HTML, CSS, JavaScript, including React and Vue.js</p>
+                            <a href="https://kelvincode1234.github.io/Quote-Generator/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Screenshot 2024-06-12 at 23-26-28 My Personal Portfolio Website.png">
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>Developed a responsive website for a Portfolio using HTML, CSS, JavaScript, including React and Vue.js</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+         </div>
+         <!-- --------contact----- -->
+          <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="container-left">
+                          <h2 class="sub-title">Contact Me</h2>
+                          <p><i class="fa-solid fa-paper-plane"></i>precykelly345@gmail.com</p>
+                          <p><i class="fa-solid fa-square-phone"></i>+234 805 183 9464</p>
+                          <div class="social-icons">
+                            <a href="https://www.instagram.com/kelv_inmerrick7?igsh=dGtjenh1aHVnNmNq"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/KelvinCode1234"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://x.com/Kellypr74147323?t=HKDe7kLUcI0Z0lAbKdQT4w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://wa.me/+2348051839464"><i class="fa-brands fa-whatsapp"></i></a>
+                          </div>
+                          <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="container-right">
+                        <form action="https://formspree.io/f/xbjnnqjy" target="_blank" method="POST">
+                            <input type="text" name="Name" placeholder="Full Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <select required>
+                                <option value="" selected>Select a continent</option>
+                                <option value="Africa">Africa</option> 
+                                <option value="Australia/Oceania">Australia/Oceania</option>
+                                <option value="Asian">Asian</option>
+                                <option value="South America">South America</option>
+                                <option value="North America">North America</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Atarctica">Atarctica</option>
+                            </select>
+                            <textarea name="Messsage" placeholder="Your Messsage..." required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2024 Created by Kelvin | All right reserved</p>
+            </div>
+          </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                }
+
+        </script>
+
+        <script>
+        
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }    
+
+        </script>
+    </body>
+</html>
