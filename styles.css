@@ -19,7 +19,7 @@ body {
     background-size: cover;
 }
 h1::first-letter {
-    color: #ff004f;
+    color: red;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -83,7 +83,7 @@ a:hover {
 
 .header-text h2 {
     font-size: 70px;
-    margin-top: 25px;
+    margin: 25px 0;
 }
 
 .header-text > h2 > span {
@@ -97,7 +97,7 @@ a:hover {
     color: #ababab;
 }
 #container {
-    padding-top: -56px;
+    padding-top: -10%;
 }
 
 .row {
@@ -202,8 +202,11 @@ a:hover {
     font-size: 30px;
     font-weight: 500px;
     margin-bottom: 15px;
-
 }
+.services-list div p {
+    font-size: px;
+}
+
 .services-list div a {
     text-decoration: none;
     color: white;
