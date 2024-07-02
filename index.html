@@ -22,6 +22,7 @@
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>  
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
                </nav>
                <div class="header-text">
                 <p class="title">Hello,</p>
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://calculator-yiy7.onrender.com" class="btn">See More</a>
+                <a href="#" onclick="window.open('More_projects_comming_soon!', '_blank')" class="btn">See more</a>
             </div>
          </div>
          <!-- --------contact----- -->
@@ -196,12 +197,28 @@
             var sidemenu = document.getElementById("sidemenu");
 
             function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200px";
-            }    
+  sidemenu.classList.add("open");
+  sidemenu.style.right = "0";
+}
+
+function closemenu(){
+  sidemenu.classList.remove("open");
+  sidemenu.style.right = "-200px";
+}
+
+// Add a tap listener to the document
+document.addEventListener("touchstart", function(event) {
+  // Check if the menu is open
+  if (sidemenu.classList.contains("open")) {
+     // Check if the tap target is not the navigation menu or its elements
+    if (!event.target.closest("#sidemenu, #sidemenu *")) {
+    // Close the menu
+    closemenu();
+    }
+  }
+});
 
         </script>
+
     </body>
 </html>

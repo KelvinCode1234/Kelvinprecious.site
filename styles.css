@@ -39,6 +39,11 @@ h1 {
     font-weight: bold;
 }
 
+p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
 .title {
     font-size: 30px;
     padding-top: 190px;
@@ -327,7 +332,7 @@ form input, form textarea {
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #ababab;
+    color: white;
     font-size: 15px;
     border-radius: 6px;
 }
@@ -344,7 +349,7 @@ select {
     border: 0;
     padding: 4px;
     padding-left: 13px;
-    color: #ababab;
+    color: white;
     font-size: 15px;
     border-radius: 4px;
 }
