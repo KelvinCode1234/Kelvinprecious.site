@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@300..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,9 @@ h1::first-letter {
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
+h1 > span {
+    color: red;
+}
 
 .container {
     padding: 10px 10%;
@@ -45,8 +49,22 @@ p {
 }
 
 .title {
+    font-family: "Permanent Marker", cursive;
     font-size: 30px;
     padding-top: 190px;
+    position: relative;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
 }
 
 nav ul li {
@@ -90,9 +108,10 @@ a:hover {
     font-size: 70px;
     margin: 25px 0;
 }
-
-.header-text > h2 > span {
-   color:  #ff004f;
+.gradient-text {
+    background: linear-gradient(to left, #ffabab, #ff004f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---------------about-------------- */
@@ -116,8 +135,8 @@ a:hover {
 }
 
 .about-col-1 img {
-   width: 100%;
-   border-radius: 20px;
+   width: 90%;
+   border-radius: 15px;
 }
 
 .about-col-2 {
@@ -240,8 +259,8 @@ a:hover {
     overflow: hidden;
 }
 .work img {
-    width: 100%;
-    border-radius: 10px;
+    width: 90%;
+    border-radius: 15px;
     display: block;
     overflow: hidden;
 }
@@ -417,7 +436,7 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars {
         flex-basis: 100%;
     }
     .about-col-1 {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .about-col-2 {
         font-size: 14px;
