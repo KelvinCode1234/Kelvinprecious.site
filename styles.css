@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: #080808;
+    background:#080808;
     color: #fff;
 }
 
@@ -115,9 +115,11 @@ a:hover {
 }
 .gradient-text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(to left, #ff6363, #ff004f);
+    background: linear-gradient(to left, #ff7474, #ff004f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 /* ---------------about-------------- */
@@ -144,7 +146,7 @@ a:hover {
    width: 100%;
    border-radius: 15px;
    border: 2px solid rgb(36, 33, 33);
-   box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.2); /* Adjust shadow properties as needed */
+   box-shadow: 10px 10px 10px rgba(255, 255, 255, 0); /* Adjust shadow properties as needed */
 }
 
 .about-col-2 {
@@ -157,10 +159,15 @@ a:hover {
 
 .sub-title {
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 600;
     color: whitesmoke;
+    margin-bottom: 13px;
+
 }
 
+p em {
+    text-transform: uppercase;
+}
 
 .tab-titles {
     display: flex;
@@ -276,8 +283,8 @@ a:hover {
     overflow: hidden;
 }
 .work img {
-    width: 90%;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
     display: block;
     overflow: hidden;
 }
@@ -297,6 +304,7 @@ a:hover {
     padding-top: 0%;
     padding-bottom: 10px;
 }
+
 .layer:hover {
     background: #ff004f;
     transform: translateY(14px);
@@ -374,8 +382,9 @@ form input, form textarea {
     border-radius: 6px;
 }
 
+
 form input:focus, form textarea:focus{
-    border: 1px solid #ff004f;
+    border: 4px solid #ff004f;
 } 
 
 form .btn2 {
@@ -454,7 +463,7 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars {
     }
       
     .layer {
-        width: 90%;
+        width: 100%;
     }
 
     .row {
@@ -536,9 +545,10 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars {
     }
 
     .about-col-1 img {
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
         margin-left: -15%;
+        border: 1px solid black;
     }
 
     .about-col-2{
