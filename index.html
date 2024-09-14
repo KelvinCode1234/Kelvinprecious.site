@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body>
+        <div class="overlay"></div>
         <div id="header">
           <div class="container">
             <nav>
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://vercel.com/kelvin-precious-projects?view=grid" class="btn">SEE MORE...</a>
+                <a href="https://vercel.com/kelvin-precious-projects?view=grid" class="btn4">SEE MORE...</a>
             </div>
          </div>
          <!-- --------contact----- -->
@@ -149,8 +150,8 @@
                             <a href="https://x.com/Kellypr74147323?t=HKDe7kLUcI0Z0lAbKdQT4w&s=09"><i class="fa-brands fa-twitter"></i></a>
                             <a href="https://wa.me/+2348051839464"><i class="fa-brands fa-whatsapp"></i></a>
                           </div>
-                          <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
-                          <a href="my-cv (2).pdf" download class="btn btn2">Download CV (2)</a>
+                          <a href="my-cv.pdf" download class="btn btn2 btn3">Download CV</a>
+                          <a href="my-cv (2).pdf" download class="btn btn2 btn3">Download CV (2)</a>
                     </div>
                     <div class="container-right">
                         <form method="POST" id="form">
@@ -192,39 +193,78 @@
 
         </script>
 
-        <script>
+            <script>
         
-            var sidemenu = document.getElementById("sidemenu");
+                var sidemenu = document.getElementById("sidemenu");
 
-            function openmenu(){
-  sidemenu.classList.add("open");
-  sidemenu.style.right = "0";
-}
+                function openmenu(){
+                    sidemenu.classList.add("open");
+                    sidemenu.style.right = "0";
+                }
 
-function closemenu(){
-  sidemenu.classList.remove("open");
-  sidemenu.style.right = "-200px";
-}
+                function closemenu(){
+                    sidemenu.classList.remove("open");
+                    sidemenu.style.right = "-600px";
+                }
 
-// Add a tap listener to the document
+                               // Add a tap listener to the document
 document.addEventListener("touchstart", function(event) {
-  // Check if the menu is open
-  if (sidemenu.classList.contains("open")) {
-     // Check if the tap target is not the navigation menu or its elements
-    if (!event.target.closest("#sidemenu, #sidemenu *")) {
-    // Close the menu
-    closemenu();
+    // Check if the menu is open
+    if (sidemenu.classList.contains("open")) {
+        // Check if the tap target is not the navigation menu or its elements
+        if (!event.target.closest("#sidemenu, #sidemenu *")) {
+            // Close the menu
+            closemenu();
+        }
     }
-  }
 });
+
+// Add a click listener for menu list items
+document.addEventListener("click", function(event) {
+    // Check if the menu is open
+    if (sidemenu.classList.contains("open")) {
+        // Check if the click target is a list item within the menu
+        if (event.target.closest("#sidemenu li")) {
+            // Close the menu
+            closemenu();
+        }
+    }
+});
+
 
         </script>
         <script src="script.js"></script>
         <script>
             $(document).ready(function() {
-                $("h2").fadeIn(1500);
+                $("h2").fadeIn(1800);
+                
+            function moveElement() {
                 $(".logo").addClass("animate__animated animate__shakeY");
+                // Remove the class after animation completes (800ms for shakeX animation)
+                setTimeout(function() {
+                    $(".logo").removeClass("animate__animated animate__shakeY");
+                }, 800); // Duration of shakeX animation
+            }
+                // Call moveElement every 3.5 seconds
+                setInterval(moveElement, 1500);
+
+                //ShakeElement(2)
+
+            function shakeElement() {
+                $(".btn3").addClass("animate__animated animate__shakeX");
+                // Remove the class after animation completes (800ms for shakeX animation)
+                setTimeout(function() {
+                    $(".btn3").removeClass("animate__animated animate__shakeX");
+                }, 800); // Duration of shakeX animation
+            }
+                // Call shakeElement every 3.5 seconds
+                setInterval(shakeElement, 3500); 
+
+                setInterval(function() {
+                    $(".btn4").fadeOut(500).fadeIn(500); // Fade out and then fade in
+                }, 2000); // Repeat every 1 second
             });
+            
         </script>
     </body>
 </html>
