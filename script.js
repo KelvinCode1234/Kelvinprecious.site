@@ -39,3 +39,12 @@ form.addEventListener('submit', function(e) {
 
 
 
+setInterval(function() {
+    $(".btn4").removeClass("zoom-out").addClass("zoom-in"); // Zoom in
+    setTimeout(function() {
+        $(".btn4").removeClass("zoom-in").addClass("zoom-out"); // Zoom out
+    }, 500); // Wait for the zoom-in animation to finish
+}, 2000); // Repeat every 2 seconds
+
+
+
