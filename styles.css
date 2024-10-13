@@ -321,7 +321,7 @@ p em {
 }
 
 .layer a {
-    margin: 10px 0; 
+    margin: 15px 0; 
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -601,6 +601,7 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars {
         font-size: 20px;
         font-family: Arial;
         font-weight: 600;
+        
     }
 
     nav ul .fa-solid.fa-xmark {
@@ -664,5 +665,10 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars {
     }
     .btn:hover {
         color: #ababab;
+    } 
+
+    .layer a {
+        margin: 15px auto;
+        font-size: 16px;
     }
 }
