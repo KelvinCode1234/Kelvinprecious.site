@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-CompatiPrecious_Kelvin_Portfolioble" content="IE-edge">
         <title>Kelvinprecious.site</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="file.css">
         <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/x-icon" href="jy.png">
+        <link rel="icon" type="image/x-icon" href="file/jy.png">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
@@ -39,7 +39,7 @@
             <div id="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="m.png" loading="eager">
+                        <img src="file/m.png" loading="eager">
                     </div>
                     <div class="about-col-2">
                     <h2 class="sub-title">About Me</h2>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Proficient in HTML, CSS, and JavaScript</span><br>I build responsive and interactive web pages.</li>
+                            <li><span>Proficient in HTML5, CSS3, JS, JQuery, and React </span><br>I build responsive and interactive web pages.</li>
                             <li><span>Skilled in React and Node.js</span><br> I create high-performance web applications</li>
                             <li><span>Expert in Responsive Design</span><br>I ensure seamless user experiences across all devices.
                             </li>
@@ -110,15 +110,15 @@
                 <h2 class="sub-title">My Work</h2>
                 <div class="work-list">
                     <div class="work">
-                        <img src="3.png" loading="eager">
+                        <img src="file/3.png" loading="eager">
                         <div class="layer">
                             <h3>Image Generator</h3>
-                            <p>This web-app can transform your ideas into stunning images in seconds. <br> Try this easy-to-use image generator now.</p>
+                            <p>This web-app can transform your ideas into stunning images in seconds. Try this easy-to-use image generator now.</p>
                             <a href="https://pix-search-io.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="1.png" loading="eager">
+                        <img src="file/1.png" loading="eager">
                         <div class="layer">
                             <h3>Marie Design</h3>
                             <p>Discover custom-tailored fashion at Marie Design, where elegance meets creativity, quality, styles and elegance in every stitch.</p>
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="2.png" loading="eager">
+                        <img src="file/2.png" loading="eager">
                         <div class="layer">
-                            <h3>Quiz Web App</h3>
-                            <p>Test your knowledge with this fun and interactive quiz web app! Challenge yourself and see how many questions you can get right.</p>
-                            <a href="https://quiz-web-app-taupe.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                            <h3>QRC Generator</h3>
+                            <p>Generate your own custom QR codes with this easy-to-use QR code generator. Perfect for sharing links, contact info, and more!</p>
+                            <a href="https://qrc-generator.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>    
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <a href="https://x.com/Kellypr74147323?t=HKDe7kLUcI0Z0lAbKdQT4w&s=09"><i class="fa-brands fa-twitter"></i></a>
                             <a href="https://wa.me/+2348051839464"><i class="fa-brands fa-whatsapp"></i></a>
                           </div>
-                          <a href="my-cv (2).pdf" download class="btn btn2 btn3">Download CV</a>
+                          <a href="file/my-cv (2).pdf" download class="btn btn2 btn3">Download CV</a>
                     </div>
                     <div class="container-right">
                         <form method="POST" id="form">
@@ -173,24 +173,24 @@
                 <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 | All Right Reserved</p>
             </div>
           </div>
-        <script>
+            <script>
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents= document.getElementsByClassName("tab-contents");
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents= document.getElementsByClassName("tab-contents");
 
 
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-                }
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                    }
 
-        </script>
+            </script>
 
             <script>
         
@@ -206,62 +206,61 @@
                     sidemenu.style.right = "-600px";
                 }
 
-                               // Add a tap listener to the document
-document.addEventListener("touchstart", function(event) {
-    // Check if the menu is open
-    if (sidemenu.classList.contains("open")) {
-        // Check if the tap target is not the navigation menu or its elements
-        if (!event.target.closest("#sidemenu, #sidemenu *")) {
-            // Close the menu
-            closemenu();
-        }
-    }
-});
-
-// Add a click listener for menu list items
-document.addEventListener("click", function(event) {
-    // Check if the menu is open
-    if (sidemenu.classList.contains("open")) {
-        // Check if the click target is a list item within the menu
-        if (event.target.closest("#sidemenu li")) {
-            // Close the menu
-            closemenu();
-        }
-    }
-});
+                               
+                document.addEventListener("touchstart", function(event) {
+                    
+                    if (sidemenu.classList.contains("open")) {
+                        
+                        if (!event.target.closest("#sidemenu, #sidemenu *")) {
+                            
+                            closemenu();
+                        }
+                    }
+                });
 
 
-        </script>
-        <script src="script.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("h2").fadeIn(1800);
-                
-            function moveElement() {
-                $(".logo").addClass("animate__animated animate__shakeX");
-                // Remove the class after animation completes (800ms for shakeX animation)
-                setTimeout(function() {
-                    $(".logo").removeClass("animate__animated animate__shakeX");
-                }, 800); // Duration of shakeX animation
-            }
-                // Call moveElement every 4 seconds
-                setInterval(moveElement, 4000);
+                document.addEventListener("click", function(event) {
+                    
+                    if (sidemenu.classList.contains("open")) {
+                        
+                        if (event.target.closest("#sidemenu li")) {
+                            
+                            closemenu();
+                        }
+                    }
+                });
+         
+            </script>
+            <script src="file.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $("h2").fadeIn(1800);
+                    
+                function moveElement() {
+                    $(".logo").addClass("animate__animated animate__shakeX");
+                    
+                    setTimeout(function() {
+                        $(".logo").removeClass("animate__animated animate__shakeX");
+                    }, 800); 
+                }
+                    
+                    setInterval(moveElement, 4000);
 
-                //ShakeElement(2)
+                    
 
-            function shakeElement() {
-                $(".btn3").addClass("animate__animated animate__shakeX");
-                // Remove the class after animation completes (800ms for shakeX animation)
-                setTimeout(function() {
-                    $(".btn3").removeClass("animate__animated animate__shakeX");
-                }, 800); // Duration of shakeX animation
-            }
-                // Call shakeElement every 4 seconds
-                setInterval(shakeElement, 4000); 
+                function shakeElement() {
+                    $(".btn3").addClass("animate__animated animate__shakeX");
+                    
+                    setTimeout(function() {
+                        $(".btn3").removeClass("animate__animated animate__shakeX");
+                    }, 800); 
+                }
+                    
+                    setInterval(shakeElement, 4000); 
 
-                
-            });
+                    
+                });
 
-        </script>
+            </script>
     </body>
 </html>
